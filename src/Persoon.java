@@ -1,4 +1,4 @@
-abstract public class Persoon {    // abstracte klasse
+abstract public class Persoon implements IBerekendLoon {    // abstracte klasse
     private String naam;
 
     public Persoon(String naam) {
