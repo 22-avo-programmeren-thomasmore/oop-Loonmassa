@@ -8,13 +8,13 @@ public class Test {
         jos.registreerUren(160);
         System.out.println(jos.getBerekendLoon());
 
-        ArrayList<Persoon> lijst = new ArrayList<>();
+        ArrayList<IBerekendLoon> lijst = new ArrayList<>();    // interface als type
         lijst.add(marc);
         lijst.add(jos);
 
         double totaal = 0;
-        for (Persoon persoon : lijst) {
-            totaal += persoon.getBerekendLoon();
+        for (IBerekendLoon loon : lijst) {               // interface als type
+            totaal += loon.getBerekendLoon();
         }
 
         System.out.println(totaal);
